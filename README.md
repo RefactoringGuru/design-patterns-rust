@@ -42,7 +42,8 @@ Also, the examples contain a **README.md** with instructions and additional expl
 cargo run --bin chain-of-responsibility
 cargo run --bin command
 cargo run --bin iterator
-cargo run --bin mediator
+cargo run --bin mediator-top-down
+cargo run --bin mediator-rc-refcell
 cargo run --bin memento
 cargo run --bin memento-serde
 cargo run --bin observer
@@ -58,9 +59,11 @@ cargo run --bin factory-method-maze-game
 cargo run --bin factory-method-render-dialog
 cargo run --bin prototype
 cargo run --bin simple-factory
-cargo run --bin singleton
+cargo run --bin singleton-local
 cargo run --bin singleton-lazy
 cargo run --bin singleton-mutex # Requires Rust 1.63
+cargo run --bin singleton-once
+cargo run --bin singleton-logger
 cargo run --bin static-creation-method
 cargo run --bin adapter
 cargo run --bin bridge
