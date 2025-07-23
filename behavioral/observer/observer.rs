@@ -18,8 +18,7 @@ pub struct Publisher {
 
 impl Publisher {
     pub fn subscribe(&mut self, event_type: Event, listener: Subscriber) {
-        self.events.entry(event_type.clone()).or_default();
-        self.events.get_mut(&event_type).unwrap().push(listener);
+        self.events.entry(event_type.clone()).or_default().push(listener);
     }
 
     pub fn unsubscribe(&mut self, event_type: Event, listener: Subscriber) {
