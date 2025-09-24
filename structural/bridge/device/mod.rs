@@ -4,7 +4,8 @@ mod tv;
 pub use radio::Radio;
 pub use tv::Tv;
 
-pub trait Device {
+
+pub trait Device: Clone {
     fn is_enabled(&self) -> bool;
     fn enable(&mut self);
     fn disable(&mut self);

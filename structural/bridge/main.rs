@@ -9,7 +9,7 @@ fn main() {
     test_device(Radio::default());
 }
 
-fn test_device(device: impl Device + Clone) {
+fn test_device(device: impl Device) {
     println!("Tests with basic remote.");
     let mut basic_remote = BasicRemote::new(device.clone());
     basic_remote.power();
