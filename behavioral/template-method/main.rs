@@ -50,6 +50,10 @@ impl TemplateMethod for ConcreteStruct2 {
     fn required_operations2(&self) {
         println!("ConcreteStruct2 says: Implemented Operation2")
     }
+
+    fn hook1(&self) {
+        println!("ConcreteClass2 says: Overridden Hook1")
+    }
 }
 
 fn client_code(concrete: impl TemplateMethod) {
