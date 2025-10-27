@@ -25,6 +25,7 @@ Same client code can work with different concrete implementations:
 TemplateMethod says: I am doing the bulk of the work
 ConcreteStruct2 says: Implemented Operation1
 TemplateMethod says: But I let subclasses override some operations
+ConcreteClass2 says: Overridden Hook1
 ConcreteStruct2 says: Implemented Operation2
 TemplateMethod says: But I am doing the bulk of the work anyway
 ```
