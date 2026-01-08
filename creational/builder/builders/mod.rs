@@ -10,7 +10,7 @@ pub trait Builder {
     fn set_seats(&mut self, seats: u16);
     fn set_engine(&mut self, engine: Engine);
     fn set_transmission(&mut self, transmission: Transmission);
-    fn set_gsp_navigator(&mut self, gps_navigator: GpsNavigator);
+    fn set_gps_navigator(&mut self, gps_navigator: GpsNavigator);
     fn build(self) -> Self::OutputType;
 }
 

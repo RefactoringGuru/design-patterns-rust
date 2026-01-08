@@ -26,7 +26,7 @@ impl Builder for CarManualBuilder {
         self.engine = Some(engine);
     }
 
-    fn set_gsp_navigator(&mut self, gps_navigator: GpsNavigator) {
+    fn set_gps_navigator(&mut self, gps_navigator: GpsNavigator) {
         self.gps_navigator = Some(gps_navigator);
     }
 

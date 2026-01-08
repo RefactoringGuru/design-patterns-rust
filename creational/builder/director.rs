@@ -15,7 +15,7 @@ impl Director {
         builder.set_seats(2);
         builder.set_engine(Engine::new(3.0, 0.0));
         builder.set_transmission(Transmission::SemiAutomatic);
-        builder.set_gsp_navigator(GpsNavigator::new());
+        builder.set_gps_navigator(GpsNavigator::new());
     }
 
     pub fn construct_city_car(builder: &mut impl Builder) {
@@ -23,7 +23,7 @@ impl Director {
         builder.set_seats(2);
         builder.set_engine(Engine::new(1.2, 0.0));
         builder.set_transmission(Transmission::Automatic);
-        builder.set_gsp_navigator(GpsNavigator::new());
+        builder.set_gps_navigator(GpsNavigator::new());
     }
 
     pub fn construct_suv(builder: &mut impl Builder) {
@@ -31,6 +31,6 @@ impl Director {
         builder.set_seats(4);
         builder.set_engine(Engine::new(2.5, 0.0));
         builder.set_transmission(Transmission::Manual);
-        builder.set_gsp_navigator(GpsNavigator::new());
+        builder.set_gps_navigator(GpsNavigator::new());
     }
 }
